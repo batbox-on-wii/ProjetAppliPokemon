@@ -9,15 +9,15 @@ import java.util.Map;
 public class TestLivraison {
 
     public static void main(String[] args) throws IOException {
-        Map<String, String> villeDe = Test.FichierLoader.chargerMembres("data/membres.txt");
-        List<LivraisonHeuristique.Vente> ventes = Test.FichierLoader.chargerVentes("data/ventes.txt");
+        Map<String, String> villeDe = Test.FichierLoader.chargerMembres("data/membres_APPLI.txt");
+        List<LivraisonHeuristique.Vente> ventes = Test.FichierLoader.chargerVentes("data/scenarios/scenario_0.txt");
         Map<String, Map<String, Integer>> distances = Test.FichierLoader.chargerDistances("data/distances.txt");
 
         List<String> chemin = LivraisonHeuristique.heuristiqueSimple(ventes, distances, villeDe, "Vélizy");
 
         System.out.println("Itinéraire calculé : " + chemin);
 
-         /* //Test pour savoir si les fichiers sont bien lues//
+          //Test pour savoir si les fichiers sont bien lues//
         System.out.println("Ventes lues :");
         for (var v : ventes) {
             System.out.println("- " + v.vendeur + " -> " + v.acheteur);
@@ -35,7 +35,7 @@ public class TestLivraison {
             }
         }
 
-          */
+
 
 
 
