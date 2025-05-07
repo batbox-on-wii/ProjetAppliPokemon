@@ -17,7 +17,7 @@ public class TestLivraison {
 
         System.out.println("Itinéraire calculé : " + chemin);
 
-         //Test pour savoir si les fichiers sont bien lues//
+         /* //Test pour savoir si les fichiers sont bien lues//
         System.out.println("Ventes lues :");
         for (var v : ventes) {
             System.out.println("- " + v.vendeur + " -> " + v.acheteur);
@@ -34,6 +34,8 @@ public class TestLivraison {
                 System.out.println("- " + e1.getKey() + " -> " + e2.getKey() + " : " + e2.getValue());
             }
         }
+
+          */
 
 
 
